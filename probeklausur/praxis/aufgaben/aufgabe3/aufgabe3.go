@@ -10,12 +10,5 @@ ZUSATZBEDINGUNG: Die Funktion muss rekursiv sein.
 func CountOdd(list []int) int {
 	// TODO
 
-	if len(list) == 0 {
-		return 0
-	}
-	if list[0]%2 != 0 {
-
-		return CountOdd(list[1:]) + 1
-	}
-	return CountOdd(list[1:])
+	return 0
 }
