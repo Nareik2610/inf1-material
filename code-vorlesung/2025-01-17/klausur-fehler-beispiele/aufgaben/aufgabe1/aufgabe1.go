@@ -10,5 +10,12 @@ package aufgabe1
 func EvenPrefix(list []int) []int {
 	result := []int{}
 	// TODO
-	return result
+	if len(list) == 0 {
+		return result
+	}
+	if list[0]%2 != 0 {
+		return result
+	}
+
+	return append(list[:1], EvenPrefix(list[1:])...)
 }
